@@ -1,0 +1,873 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+/* header */
+
+div.header {
+  background-image: url(../images/hero\ img.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+div.header div.shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+}
+
+div.header div.container {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+}
+div.header div.container div.navbar {
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+div.header div.container div.navbar div.logo {
+  width: 50%;
+  float: left;
+}
+
+div.header div.container div.navbar div.logo a {
+  width: 50%;
+  float: left;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 25px;
+  color: #ff305b;
+}
+
+div.header div.container div.navbar div.nav-links {
+  width: 50%;
+  float: right;
+}
+
+div.header div.container div.navbar div.nav-links li {
+  display: inline-block;
+}
+
+div.header div.container div.navbar div.nav-links a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #fff;
+  margin: 0 10px;
+  transition: color 0.7s;
+}
+
+div.header div.container div.navbar div.nav-links a.home {
+  color: #ff305b;
+}
+
+div.header div.container div.navbar div.nav-links a:hover {
+  color: #ff305b;
+}
+
+div.header div.container div.content {
+  width: 50%;
+  margin: 15% auto;
+  padding: 10px;
+  text-align: center;
+}
+
+div.header div.container div.content div.head p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #fff;
+}
+
+div.header div.container div.content div.head h1 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 77px;
+  color: #ff305b;
+  margin: 30px 0;
+}
+
+div.header div.container div.content div.position p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 31px;
+  color: #fff;
+}
+
+/* about */
+
+div.about {
+  padding: 80px 0;
+}
+
+div.about div.container {
+  width: 80%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+div.about div.container div.rdam-img {
+  width: 50%;
+  float: left;
+}
+
+div.about div.container div.rdam-img div.content {
+  width: fit-content;
+  margin: auto;
+  position: relative;
+}
+div.about div.container div.rdam-img div.content .img {
+  overflow: hidden;
+}
+div.about div.container div.rdam-img div.content img {
+  vertical-align: middle;
+  border-radius: 5px;
+  width: 100%;
+}
+
+div.about div.container div.rdam-img div.content::before {
+  content: "";
+  width: 330px;
+  height: 410px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: solid 8px #555555;
+  border-radius: 5px;
+}
+
+div.about div.container div.rdam-img div.content div.img {
+  transform: translate(20px, 20px);
+  text-align: center;
+  position: relative;
+}
+
+div.about div.container div.rdam-img div.content div.social-media {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 1s ease;
+}
+div.about div.container div.rdam-img div.content div.social-media i {
+  position: relative;
+  top: 50%;
+  margin: 0 10px;
+  transition: color 1s;
+}
+
+div.about div.container div.rdam-img div.content div.social-media i:hover {
+  color: #ff305b;
+}
+
+div.about
+  div.container
+  div.rdam-img
+  div.content
+  div.img:hover
+  div.social-media {
+  transform: translateY(0);
+}
+
+div.about div.container div.description {
+  width: 50%;
+  float: right;
+}
+
+div.about div.container div.description div.content {
+  position: relative;
+}
+
+div.about div.description div.content h2 {
+  margin: 0 15px;
+  margin-bottom: 20px;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #333333;
+}
+
+div.about div.description div.content h2::before {
+  content: "";
+  width: 5px;
+  height: 24px;
+  background-color: rgb(255, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div.about div.description div.content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #555555;
+}
+
+div.about div.description div.info span {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #333333;
+}
+
+div.about div.description div.info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #555555;
+  margin: 20px 0;
+}
+
+div.about div.container div.description div.info {
+  border-top: 1px dashed #999999;
+  margin: 20px 0;
+}
+
+div.about div.container div.description div.info .left {
+  float: left;
+  width: 40%;
+}
+
+div.about div.container div.description div.info .right {
+  float: left;
+  width: 40%;
+}
+
+div.about div.container div.description div.buttons button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #ffffff;
+  background-color: #ff305b;
+  border-radius: 10px;
+  border-color: transparent;
+  padding: 10px;
+  transition: background-color 1s;
+  margin-right: 10px;
+}
+div.about div.container div.description div.buttons button:hover {
+  background-color: #ec2403;
+}
+
+/* Our Service */
+
+div.services {
+  background-color: #f1f1f1;
+  padding: 40px 0;
+  text-align: center;
+}
+
+div.services div.container {
+  width: 80%;
+  margin: auto;
+}
+
+div.services div.container div.title {
+  padding: 40px 0;
+  position: relative;
+}
+
+div.services div.container div.title h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  color: #333333;
+}
+
+div.services div.container div.title h2::before {
+  content: "";
+  width: 80px;
+  height: 7px;
+  position: absolute;
+  top: 80%;
+  left: 47%;
+  border-bottom: solid #ff305b 1px;
+  border-top: solid #ff305b 1px;
+}
+
+div.services div.container div.title h2::after {
+  content: "";
+  width: 150px;
+  height: 15px;
+  position: absolute;
+  top: 70%;
+  left: 44%;
+  border-bottom: solid #ff305b 1px;
+}
+
+div.services div.container div.content {
+  margin-top: 20px;
+}
+
+div.services div.container div.content div.service-item {
+  width: 25%;
+  float: left;
+  padding: 40px 0;
+  transition: all 1s;
+}
+
+div.services div.container div.content div.service-item:hover {
+  background-color: #ffffff;
+  border-radius: 3px;
+  border-color: #555555;
+}
+
+div.services div.container div.content div.service-item:hover .icon {
+  transform: scale(1.2);
+}
+
+div.services div.container div.content div.service-item div.icon {
+  color: #ff305b;
+  font-size: 36px;
+  margin-bottom: 20px;
+  transition: all 1s;
+}
+
+div.services div.container div.content div.service-item div.info {
+  margin-bottom: 20px;
+}
+
+div.services div.container div.content div.service-item div.info h3 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #333333;
+}
+
+div.services div.container div.content div.service-item div.description {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #555555;
+  width: 90%;
+}
+
+/* Portolio */
+
+div.portfolio {
+  padding: 40px 0;
+  text-align: center;
+}
+
+div.portfolio div.container {
+  width: 80%;
+  margin: auto;
+}
+
+div.portfolio div.container div.title {
+  padding: 40px 0;
+  position: relative;
+}
+
+div.portfolio div.container div.title h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  color: #333333;
+}
+
+div.portfolio div.container div.title h2::before {
+  content: "";
+  width: 80px;
+  height: 7px;
+  position: absolute;
+  top: 80%;
+  left: 47%;
+  border-bottom: solid #ff305b 1px;
+  border-top: solid #ff305b 1px;
+}
+
+div.portfolio div.container div.title h2::after {
+  content: "";
+  width: 150px;
+  height: 15px;
+  position: absolute;
+  top: 70%;
+  left: 44%;
+  border-bottom: solid #ff305b 1px;
+}
+
+div.portfolio div.container div.menu {
+  margin: 20px 0;
+}
+
+div.portfolio div.container div.menu li {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #333333;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+div.portfolio div.container div.menu .All {
+  color: #ff305b;
+}
+
+div.portfolio div.container div.list {
+  margin: 20px 0;
+}
+
+div.portfolio div.container div.list div.list-item {
+  width: 33.3333%;
+  float: left;
+  margin: 20px 0;
+}
+
+div.portfolio div.container div.list div.list-item div.img {
+  position: relative;
+  width: 90%;
+  transform: translateX(5%);
+}
+div.portfolio div.container div.list div.list-item img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+div.portfolio div.container div.list div.list-item div.layer {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+div.portfolio div.container div.list div.list-item div.layer i {
+  position: relative;
+  top: 90%;
+  left: 45%;
+  color: #ff305b;
+}
+
+div.portfolio div.container div.list div.list-item:hover div.layer {
+  opacity: 1;
+}
+
+/* achievement */
+
+div.achievement {
+  background-color: #f1f1f1;
+  padding: 40px 0;
+  text-align: center;
+}
+
+div.achievement div.container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+div.achievement div.container div.analysis {
+  float: left;
+  width: 25%;
+  padding: 40px 0;
+}
+
+div.achievement div.container div.analysis div.icon i {
+  font-size: 26px;
+  color: #ff305b;
+  margin: 10px;
+}
+
+div.achievement div.container div.analysis div.number h3 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  line-height: 29px;
+  color: #333333;
+  margin: 10px;
+}
+
+div.achievement div.container div.analysis div.description p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #555555;
+}
+
+/* client feedback */
+div.feedback {
+  padding: 40px 0;
+  background-color: #ffffff;
+}
+
+div.feedback div.container {
+  width: 80%;
+  margin: auto;
+}
+
+div.feedback div.container div.title {
+  padding: 40px 0;
+  position: relative;
+}
+
+div.feedback div.container div.title h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  color: #333333;
+  text-align: center;
+}
+
+div.feedback div.container div.title h2::before {
+  content: "";
+  width: 80px;
+  height: 8px;
+  position: absolute;
+  top: 80%;
+  left: 47%;
+  border-bottom: solid #ff305b 1px;
+  border-top: solid #ff305b 1px;
+}
+
+div.feedback div.container div.title h2::after {
+  content: "";
+  width: 150px;
+  height: 15px;
+  position: absolute;
+  top: 70%;
+  left: 44%;
+  border-bottom: solid #ff305b 2px;
+}
+
+div.feedback div.container div.content {
+  background-color: #f1f1f1;
+  width: 60%;
+  margin: 20px auto;
+  padding: 50px 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+div.feedback div.container div.content div.img {
+  float: left;
+  width: 30%;
+}
+
+div.feedback div.container div.content div.img img {
+  width: 50%;
+  vertical-align: middle;
+  border-radius: 50%;
+  transform: translateX(30%);
+}
+
+div.feedback div.container div.content div.img::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-image: conic-gradient(
+    #ff305b 0deg,
+    #ff305b 45deg,
+    #f1f1f1 45deg,
+    #f1f1f1 225deg,
+    #ff305b 225deg
+  );
+  border-top-left-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+div.feedback div.container div.content div.data {
+  float: right;
+  width: 70%;
+}
+
+div.feedback div.container div.content div.data h3 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+div.feedback div.container div.content div.data h4 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 17px;
+  color: #777777;
+  margin-bottom: 10px;
+}
+
+div.feedback div.container div.content div.data p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  font-style: italic;
+  color: #555555;
+  margin-bottom: 10px;
+}
+
+div.feedback div.container div.content div.data div.rate {
+  color: #f1c30d;
+}
+
+/* our Blog */
+div.blog {
+  padding: 40px 0;
+  background-color: #f1f1f1;
+}
+
+div.blog div.container {
+  width: 80%;
+  margin: auto;
+}
+
+div.blog div.container div.Title {
+  padding: 40px 0;
+  position: relative;
+}
+
+div.blog div.container div.Title h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  color: #333333;
+  text-align: center;
+}
+
+div.blog div.container div.Title h2::before {
+  content: "";
+  width: 80px;
+  height: 8px;
+  position: absolute;
+  top: 80%;
+  left: 47%;
+  border-bottom: solid #ff305b 1px;
+  border-top: solid #ff305b 1px;
+}
+
+div.blog div.container div.Title h2::after {
+  content: "";
+  width: 150px;
+  height: 15px;
+  position: absolute;
+  top: 70%;
+  left: 44%;
+  border-bottom: solid #ff305b 2px;
+}
+
+div.blog div.container div.list div.list-item {
+  background-color: #fff;
+  float: left;
+  width: 30%;
+  height: 450px;
+  margin: 15px;
+}
+
+div.blog div.container div.list div.list-item img {
+  width: 100%;
+  vertical-align: middle;
+}
+div.blog div.container div.list div.list-item iframe {
+  width: 100%;
+  height: 200px;
+  vertical-align: middle;
+}
+
+div.blog div.container div.list div.list-item div.info {
+  padding: 20px;
+}
+
+div.blog div.container div.list div.list-item div.info h3 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #333333;
+  margin-bottom: 10px;
+  transition: color 1s;
+}
+div.blog div.container div.list div.list-item div.info h3:hover {
+  color: #ff305b;
+}
+
+div.blog div.container div.list div.list-item div.info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #555555;
+  margin-bottom: 10px;
+}
+div.blog div.container div.list div.list-item div.info span {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #333333;
+  margin-bottom: 10px;
+  transition: color 1s;
+}
+div.blog div.container div.list div.list-item div.info span:hover {
+  color: #ff305b;
+}
+
+/* contact us */
+div.contact {
+  padding: 40px 0;
+}
+
+div.contact div.container {
+  width: 50%;
+  margin: auto;
+}
+
+div.contact div.container div.title {
+  padding: 40px 0;
+  position: relative;
+  text-align: center;
+}
+
+div.contact div.container div.title h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 30px;
+  color: #333333;
+}
+
+div.contact div.container div.title h2::before {
+  content: "";
+  width: 80px;
+  height: 7px;
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  border-bottom: solid #ff305b 1px;
+  border-top: solid #ff305b 1px;
+}
+
+div.contact div.container div.title h2::after {
+  content: "";
+  width: 150px;
+  height: 15px;
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  border-bottom: solid #ff305b 1px;
+}
+
+div.contact div.container div.form {
+  margin: 20px 0;
+}
+
+div.contact div.container div.form input {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+div.contact div.container div.form div.name input {
+  float: left;
+  width: 45%;
+  margin: 10px 0;
+}
+div.contact div.container div.form input::placeholder,
+div.contact div.container div.form textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+div.contact div.container div.form div.email input {
+  float: right;
+  width: 45%;
+  margin: 10px 0;
+}
+
+div.contact div.container div.form div.subject input,
+div.contact div.container div.form div.message textarea {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+div.contact div.container div.form div.button button {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 38px;
+  color: #ffffff;
+  background-color: #ff305b;
+  border-radius: 5px;
+  border-color: transparent;
+  padding: 0 15px;
+  transition: background-color 1s;
+}
+
+div.contact div.container div.form div.button button:hover {
+  background-color: #ec2403;
+}
+
+/* footer */
+
+div.footer {
+  background-color: #333333;
+  padding: 40px 0;
+}
+
+div.footer div.container {
+  width: 50%;
+  margin: 10px auto;
+  text-align: center;
+  color: #fff;
+}
+
+div.footer div.container div.social-media i {
+  margin: 10px 10px;
+}
+
+div.footer div.container div.copy-right {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+div.footer div.container div.copy-right span {
+  color: #ff3141;
+}
